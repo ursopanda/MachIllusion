@@ -1,0 +1,46 @@
+<html>
+	<title>Mach illusion</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="copyright" lang="en" content="Property of Emil Syundyukov" />
+		<meta name="description" content="Realisation of Mach illusion" />
+		<meta name="keywords" content="Mach, illusion, programming, javascript, computer graphics" />
+	</head>
+	<body onload="init()" itemscope itemtype="http://schema.org/Product">
+				<h2 itemprop="name">Mach Bands</h2>
+				<h4>Written on Javascript</h4>
+			<span itemscope itemtype="http://schema.org/Person">
+				<h5>Author: <b itemprop="name">Emil Syundyukov</b> <br />
+					<i itemprop="jobTitle">student at University of Latvia</i> <br />
+					<u itemprop="email">e.syundyukov@gmail.com</u> <br />
+					<b itemprop="telephone">+371 20201964</b>
+				</h5>
+			</span>
+			<span itemscope itemtype="http://schema.org/Product">
+				<p><b itemprop="name">Mach bands</b> <i itemprop="description">is an optical illusion named after the physicist Ernst Mach. <br /> It exaggerates the contrast between edges of the slightly differing shades of gray, as soon as they contact one another, by triggering edge-detection in the human visual system.</i></p>
+			</span>
+		<canvas id="laukums" height="1200px" width="900px">
+		</canvas>
+
+		<script type="text/javascript">
+			var context = document.getElementById('laukums').getContext('2d');
+
+			function init() {
+				context.fillStyle='#000000';
+				context.fillRect(0, 0, 200, 500);
+
+				context.fillStyle='#303030';
+				context.fillRect(100, 0, 200, 500);
+
+				context.fillStyle='#505050';
+				context.fillRect(300, 0, 200, 500);
+
+				context.fillStyle='#707070';
+				context.fillRect(500, 0, 200, 500);
+
+				context.fillStyle='#909090';
+				context.fillRect(700, 0, 200, 500);
+			};
+		</script>
+	</body>
+</html>
